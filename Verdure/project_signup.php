@@ -22,7 +22,7 @@ else{
     if(($result2)==1)
  {   
      
-    echo"Succesful";
+    header("location: projectlogin.php");
     }
 
     else

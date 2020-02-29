@@ -11,12 +11,11 @@ $sql="select * from users where username='".$username."' AND password='".$passwo
 $result=mysqli_query($link,$sql);
 
 if(mysqli_num_rows($result)==1){
-    echo "yay";
-    exit();
+    header("location: index.html");
 }
 else{
-    echo "nope";
-    exit();
+    echo "Invalid Username and password";
+    
 }
 }
 
