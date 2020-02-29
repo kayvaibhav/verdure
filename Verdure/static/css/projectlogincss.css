@@ -1,0 +1,20 @@
+body {
+	background-color: black;
+
+}
+
+
+.login {
+	text-align: center;
+}
+
+.navbar {
+	padding-left: 0;
+}
+
+#login {
+	color: white;
+}
+label {
+	color: white;
+}
