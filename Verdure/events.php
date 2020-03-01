@@ -70,10 +70,9 @@ $q=mysqli_query($link,$sql1);
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="">About Us</a></li>
+              <a class="nav-link" href="about_us.html">About Us</a></li>
           </ul>
           </ul>
-      <span><a href="projectlogin.php"><i class="fas fa-user"></i> Login</a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
     </nav>
 
@@ -84,7 +83,7 @@ $q=mysqli_query($link,$sql1);
           <div class="col-md-8">
             <h1 class="heading display-2">Events</h1>
             <hr>
-            <ul> <?php while($row=mysqli_fetch_array($q)){echo  " <li class='bg-dark'><p>Description:  "  .$row['description']." <br>Address: ".$row['address']."<br>Date: ".$row['date']."          <br> <button class='btn btn-primary'>Join</button></p></li>";}?>
+            <ul> <?php while($row=mysqli_fetch_array($q)){echo  " <li class='bg' style='font-size: 1.0rem;'><p>Description:  "  .$row['description']." <br>Address: ".$row['address']."<br>Date: ".$row['date']."          <br> <button class='btn btn-primary'>Join</button></p></li>";}?>
             </ul>
           </div>
           <div class="col-md-4 column1" id="id1">

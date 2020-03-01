@@ -11,10 +11,10 @@ $sql="select * from users where username='".$username."' AND password='".$passwo
 $result=mysqli_query($link,$sql);
 
 if(mysqli_num_rows($result)==1){
-    header("location: index.html");
+    header("location: index1.html");
 }
 else{
-    echo "Invalid Username and password";
+    echo "<p style='color: Red;'>Invalid Username and password</p>";
     
 }
 }
@@ -57,7 +57,7 @@ else{
           <ul class="navbar-nav mr-auto">
 
             <li class="nav-item active">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="about_us.html">About Us</a>
             </li>
           </ul>
         </div>
